@@ -1,10 +1,6 @@
-# FastAPI Python Template #
+# FastAPI Template #
 
 This repository contains a template project using FastApi framework for Python
-
-### What is this repository for? ###
-
-This is a template for FastApi projects to use as a reference
 
 ### How do I get set up? ###
 
