@@ -5,4 +5,3 @@ class ErrorResponse(BaseDto):
     timestamp: str
     message: str
     error: str
-    status: int

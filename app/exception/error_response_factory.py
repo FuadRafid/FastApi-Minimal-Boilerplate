@@ -19,7 +19,6 @@ class ErrorResponseFactory:
         ErrorResponseFactory.__logger.error("An error occurred", exc_info=True)
         error_response = ErrorResponse(
             timestamp=str(get_datetime_now()),
-            status=status_code.value,
             error=status_code.phrase,
             message=client_message)
         return Response(error_response.json(), media_type="application/json", status_code=status_code.value)
