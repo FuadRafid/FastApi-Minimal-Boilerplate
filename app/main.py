@@ -11,4 +11,4 @@ for router_module in routers:
     app.include_router(router_module.router, prefix=router_module.prefix)
 
 if __name__ == '__main__':
-    uvicorn.run(app)
+    uvicorn.run(port=8080, app=app)
