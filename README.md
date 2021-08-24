@@ -7,7 +7,7 @@ This repository contains a template project using FastApi framework for Python
 1. First, set up a Python virtual environment and activate it.
 2. Then run the following command to setup the dependencies:
 `
-pip install requirement.txt
+pip install -r requirements.txt
 `
 3. Run `main.py` to start the server
 
