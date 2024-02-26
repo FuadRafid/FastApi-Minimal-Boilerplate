@@ -81,8 +81,10 @@ class TestCalculatorRouter(TestCase):
         dto = CalculationRequestDto(first_number=10, second_number=2)
         with self.assertRaises(RequestValidationError) as raisedException:
             self.__loop.run_until_complete(calculator_router.divide_numbers(dto))
-        assert raisedException.exception.errors() == [
-            {'loc': ('body', 'firstNumber'), 'msg': '', 'type': 'value_error.exception'}]
+        assert len(raisedException.exception.errors()) == 1
+        assert raisedException.exception.errors()[0].exc.errors() == [
+            {'loc': ('firstNumber',), 'msg': '', 'type': 'value_error.exception'}
+        ]
 
     @patch("app.router.calculator_router.__calculator_service.subtract_numbers", get_mocked_service_exception)
     def test_calculator_router_when_throws_service_exception_should_return_correct_output(self):

@@ -11,4 +11,4 @@ class TestExceptionHandler(TestCase):
         app = FastAPI()
         ExceptionHandler.initiate_exception_handlers(app)
         assert app.exception_handlers.get(ApplicationException) is not None
-        assert len(app.exception_handlers) == 3
+        assert len(app.exception_handlers) == 4
