@@ -8,7 +8,7 @@ ExceptionHandler.initiate_exception_handlers(app)
 
 # add routers
 for router_module in routers:
-    app.include_router(router_module.router, prefix=router_module.prefix)
+    app.include_router(router_module.router)
 
 if __name__ == '__main__':
     uvicorn.run(port=8080, app=app)

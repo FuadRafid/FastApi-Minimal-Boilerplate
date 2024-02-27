@@ -1,5 +1,6 @@
-pyhumps==1.6.1
-uvicorn==0.11.7
+pyhumps==3.8.0
+uvicorn==0.27.1
 fastapi==0.110.0
 python-multipart==0.0.9
 pydantic==2.6.2
+websockets==12.0
