@@ -21,4 +21,4 @@ class ErrorResponseFactory:
             timestamp=str(get_datetime_now()),
             error=status_code.phrase,
             message=client_message)
-        return Response(error_response.json(), media_type="application/json", status_code=status_code.value)
+        return Response(error_response.model_dump_json(), media_type="application/json", status_code=status_code.value)

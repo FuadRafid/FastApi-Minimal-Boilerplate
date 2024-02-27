@@ -2,3 +2,4 @@ pyhumps==1.6.1
 uvicorn==0.11.7
 fastapi==0.110.0
 python-multipart==0.0.9
+pydantic==2.6.2
