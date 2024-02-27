@@ -9,7 +9,7 @@ This repository contains a template project using FastApi framework for Python
 `
 pip install -r requirements.txt
 `
-3. Run `main.py` to start the server (`python -m main`)
+3. Run `main.py` to start the server (`python -m app.main`)
 4. Run `python -m unittest` to run tests
 
 ### Rest Endpoints and routers ###
