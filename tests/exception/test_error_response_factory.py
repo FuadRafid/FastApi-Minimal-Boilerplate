@@ -16,5 +16,4 @@ class TestErrorResponseFactory(TestCase):
         response: Response = ErrorResponseFactory.get_error_response(HTTPStatus.INTERNAL_SERVER_ERROR, "client_message")
         self.assertTrue(mocked_logger.error.called)
         assert response.status_code == 500
-        assert response.body == b'{"timestamp": "2020-06-30 00:00:00", "message": "client_message", "error":' \
-                                b' "Internal Server Error"}'
+        assert response.body == b'{"timestamp":"2020-06-30 00:00:00","message":"client_message","error":"Internal Server Error"}'
