@@ -1,4 +1,4 @@
-# FastAPI Template #
+# FastApi-Minimal-Boilerplate #
 
 This repository contains a template project using FastApi framework for Python
 
