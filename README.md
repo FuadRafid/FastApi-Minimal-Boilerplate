@@ -25,7 +25,7 @@ The `router` package has all the FastApi routers for this project. Please refer 
 To add a router, create a router in the `router` package. Then add the router in the list in `__init__.py` of `router` package. `main.py` automatically adds the routers to FastApi `app` from this list.
 
 ### Exception Handling ###
-The `exception` package has all needed classes for Exception Handling. The `ApplicationException` class is a custom `Exception` that is thrown in the application. This class `ExceptionResponseFactory` creates a response for the error that occurs. 
+The `exception` package has all needed classes for Exception Handling. The `ApplicationException` class is a custom `Exception` that is thrown in the application. The class `ExceptionResponseFactory` creates a response for the error that occurs. 
 
 If an exception is thrown in multiple places in the application, please add a handler for the exception in `ExceptionHandler` class. 
 
